@@ -1,5 +1,6 @@
 package com.example.fitnessandyoga
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -23,10 +24,17 @@ class MainActivity : AppCompatActivity() {
 
         btn1.setOnClickListener {
             Toast.makeText(this,"Opening White Music",Toast.LENGTH_SHORT).show()
+
+            val Intent= Intent(this,WhiteMusicActivity::class.java)
+            startActivity(Intent)
         }
 
         btn2.setOnClickListener {
             Toast.makeText(this,"Opening Horoscope",Toast.LENGTH_SHORT).show()
+
+            val Intent= Intent(this,WhiteMusicActivity::class.java)
+            startActivity(Intent)
+
         }
 
         btn3.setOnClickListener {
