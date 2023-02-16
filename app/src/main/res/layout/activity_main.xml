@@ -10,12 +10,13 @@
 
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/wht_btn"
         android:layout_width="140dp"
         android:layout_height="140dp"
         android:layout_marginStart="40dp"
+        android:background="@drawable/r_effect"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton2"
+        app:layout_constraintEnd_toStartOf="@+id/horo_btn"
         app:layout_constraintHorizontal_bias="0.372"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -23,38 +24,44 @@
         app:srcCompat="@drawable/whitemusiclogo" />
 
     <ImageButton
-        android:id="@+id/imageButton2"
+        android:id="@+id/horo_btn"
         android:layout_width="140dp"
         android:layout_height="140dp"
         android:layout_marginStart="40dp"
         android:layout_marginEnd="40dp"
+        android:background="@drawable/r_effect"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageButton"
+        app:layout_constraintStart_toEndOf="@+id/wht_btn"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.255"
         app:srcCompat="@drawable/horoscope" />
 
     <ImageButton
-        android:id="@+id/imageButton3"
+        android:id="@+id/motiv_btn"
         android:layout_width="140dp"
         android:layout_height="140dp"
         android:layout_marginStart="40dp"
+        android:background="@drawable/r_effect"
+
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton4"
+        app:layout_constraintEnd_toStartOf="@+id/yoga_btn"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton"
+        app:layout_constraintTop_toBottomOf="@+id/wht_btn"
         app:srcCompat="@drawable/quotes" />
 
     <ImageButton
-        android:id="@+id/imageButton4"
+        android:id="@+id/yoga_btn"
         android:layout_width="140dp"
         android:layout_height="140dp"
         android:layout_marginStart="40dp"
         android:layout_marginEnd="40dp"
+        android:background="@drawable/r_effect"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageButton3"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton2"
+        app:layout_constraintStart_toEndOf="@+id/motiv_btn"
+        app:layout_constraintTop_toBottomOf="@+id/horo_btn"
         app:srcCompat="@drawable/yoga" />
 </androidx.constraintlayout.widget.ConstraintLayout>
