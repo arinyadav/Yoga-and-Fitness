@@ -4,53 +4,97 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-   >
+    tools:context=".MainActivity">
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/light_blue"
+        android:background="@color/white"
         android:orientation="vertical"
-        android:weightSum="11"
-        >
+        android:weightSum="11">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarToolbar"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginEnd="@dimen/_16pxh"
+            android:gravity="center_horizontal"
+            app:contentInsetStart="0dp">
+
+            <LinearLayout
+                android:id="@+id/linearRow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+
+                    android:id="@+id/txtJennyWilson"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_4pxh"
+                    android:layout_marginTop="@dimen/_2pxv"
+                    android:layout_weight="0.87"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="Hi There"
+                    android:textSize="20sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <ImageButton
+                    android:id="@+id/imageEllipseOne"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="@dimen/_12pxh"
+
+                    android:background="@drawable/r_effect"
+
+                    android:contentDescription="TODO"
+                    android:elevation="80dp"
+
+                    android:scaleType="centerCrop"
+
+                    android:src="@drawable/yog"
+                    tools:ignore="ContentDescription" />
+
+
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
 
 
         <RelativeLayout
+            style="@style/groupStylecornerRadius_2"
             android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:layout_weight="2"
-            >
+            android:layout_height="200dp"
+            android:layout_weight="1"
 
-            <TextView
-                android:id="@+id/textGrid"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:text="@string/yoga_and_fitness"
-                android:textColor="@color/black"
-                android:textSize="34sp" />
+            android:background="@drawable/reccor">
 
             <ImageView
                 android:id="@+id/imageView"
-                android:layout_width="302dp"
-                android:layout_height="126dp"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="60dp"
-                android:layout_marginEnd="57dp"
-                android:layout_marginBottom="-2dp"
-                android:src="@drawable/wel" />
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
 
+                android:layout_centerInParent="true"
+                app:srcCompat="@drawable/yog" />
         </RelativeLayout>
+
 
         <GridLayout
             android:id="@+id/mainGrid"
             android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:layout_marginTop="50dp"
+            android:layout_height="338dp"
+            android:layout_marginTop="80dp"
             android:layout_weight="8"
             android:alignmentMode="alignMargins"
+            android:background="@color/white"
             android:columnCount="2"
             android:columnOrderPreserved="false"
             android:padding="14dp"
@@ -60,8 +104,8 @@
 
             <!-- Column 1 -->
             <androidx.cardview.widget.CardView
-                android:layout_width="0dp"
-                android:layout_height="0dp"
+                android:layout_width="1dp"
+                android:layout_height="1dp"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
                 android:layout_marginLeft="16dp"
@@ -70,30 +114,15 @@
                 app:cardCornerRadius="8dp"
                 app:cardElevation="8dp">
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:layout_margin="16dp"
-                    android:orientation="vertical">
+                <ImageButton
+                    android:id="@+id/wht_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/r_effect"
+                    android:contentDescription="TODO"
+                    android:src="@drawable/musi" />
 
-                    <ImageView
-                        android:id="@+id/wht_btn"
-                        android:layout_width="wrap_content"
-                        android:layout_height="115dp"
-                        android:layout_gravity="center_horizontal"
-                        android:src="@drawable/wht_music" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="White Music"
-                        android:textAlignment="center"
-                        android:textColor="@android:color/black"
-                        android:textSize="18sp"
-                        android:textStyle="bold" />
-
-                </LinearLayout>
 
             </androidx.cardview.widget.CardView>
 
@@ -109,31 +138,19 @@
                 app:cardCornerRadius="8dp"
                 app:cardElevation="8dp">
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:layout_margin="16dp"
-                    android:orientation="vertical">
 
-                    <ImageView
-                        android:id="@+id/yoga_btn"
-                        android:layout_width="wrap_content"
-                        android:layout_height="115dp"
-                        android:layout_gravity="center_horizontal"
-                        android:src="@drawable/lotus" />
+                <ImageButton
+                    android:id="@+id/yoga_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/r_effect"
+                    android:contentDescription="TODO"
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Yoga"
+                    android:src="@drawable/yog"
 
-                        android:textAlignment="center"
-                        android:textColor="@android:color/black"
-                        android:textSize="18sp"
-                        android:textStyle="bold" />
+                    android:textAlignment="center" />
 
-                </LinearLayout>
 
             </androidx.cardview.widget.CardView>
 
@@ -152,30 +169,17 @@
                 app:cardCornerRadius="8dp"
                 app:cardElevation="8dp">
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:layout_margin="16dp"
-                    android:orientation="vertical">
 
-                    <ImageView
-                        android:id="@+id/motiv_btn"
-                        android:layout_width="wrap_content"
-                        android:layout_height="115dp"
-                        android:layout_gravity="center_horizontal"
-                        android:src="@drawable/cancer" />
+                <ImageButton
+                    android:id="@+id/motiv_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/r_effect"
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Motivational Quotes"
-                        android:textAlignment="center"
-                        android:textColor="@android:color/black"
-                        android:textSize="18sp"
-                        android:textStyle="bold" />
+                    android:contentDescription="TODO"
+                    android:src="@drawable/motiv" />
 
-                </LinearLayout>
 
             </androidx.cardview.widget.CardView>
 
@@ -191,30 +195,17 @@
                 app:cardCornerRadius="8dp"
                 app:cardElevation="8dp">
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:layout_margin="16dp"
-                    android:orientation="vertical">
 
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="115dp"
-                        android:layout_gravity="center_horizontal"
-                        android:src="@drawable/horoscope" />
+                <ImageButton
+                    android:id="@+id/horo_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/r_effect"
 
-                    <TextView
-                        android:id="@+id/horo_btn"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Horoscope"
-                        android:textAlignment="center"
-                        android:textColor="@android:color/black"
-                        android:textSize="18sp"
-                        android:textStyle="bold" />
+                    android:contentDescription="TODO"
+                    android:src="@drawable/horoscope" />
 
-                </LinearLayout>
 
             </androidx.cardview.widget.CardView>
 

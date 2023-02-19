@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="txtRowdiesregular18_1"></style>
+
+    <style name="groupStylecornerRadius_2">
+        <item name="android:background">@drawable/reccor</item>
+    </style>
+
+</resources>
