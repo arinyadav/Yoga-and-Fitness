@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    >
 
 
     <LinearLayout
@@ -42,8 +43,8 @@
                     android:layout_weight="0.87"
                     android:ellipsize="end"
                     android:singleLine="true"
-                    android:text="Hi There"
-                    android:textSize="20sp"
+                    android:text="Good Morning, Arin"
+                    android:textSize="25sp"
                     android:textStyle="bold">
 
                 </TextView>
@@ -77,13 +78,21 @@
 
             android:background="@drawable/reccor">
 
-            <ImageView
+            <ImageButton
                 android:id="@+id/imageView"
+                android:layout_width="277dp"
+                android:layout_height="131dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/banner" />
+
+            <TextView
+                android:id="@+id/textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
-                android:layout_centerInParent="true"
-                app:srcCompat="@drawable/yog" />
+                android:layout_marginLeft="100dp"
+                android:textSize="24dp"
+                android:text="Click to know more "
+                android:textStyle="bold" />
         </RelativeLayout>
 
 
