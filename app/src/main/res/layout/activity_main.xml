@@ -5,13 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
+    android:background="@drawable/bgmain"
     >
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/white"
+        android:background=""
         android:orientation="vertical"
         android:weightSum="11">
 
@@ -36,16 +37,17 @@
                 <TextView
 
                     android:id="@+id/txtJennyWilson"
-                    android:layout_width="match_parent"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/_4pxh"
                     android:layout_marginTop="@dimen/_2pxv"
                     android:layout_weight="0.87"
                     android:ellipsize="end"
                     android:singleLine="true"
-                    android:text="Good Morning, Arin"
+                    android:textColor="@color/black"
+                    android:text="Good Morning"
                     android:textSize="25sp"
-                    android:textStyle="bold">
+                    android:textStyle="italic">
 
                 </TextView>
 
@@ -71,19 +73,13 @@
 
 
         <RelativeLayout
-            style="@style/groupStylecornerRadius_2"
+
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:layout_weight="1"
 
-            android:background="@drawable/reccor">
+            >
 
-            <ImageButton
-                android:id="@+id/imageView"
-                android:layout_width="277dp"
-                android:layout_height="131dp"
-                android:layout_centerInParent="true"
-                android:background="@drawable/banner" />
 
             <TextView
                 android:id="@+id/textView"
@@ -92,7 +88,18 @@
                 android:layout_marginLeft="100dp"
                 android:textSize="24dp"
                 android:text="Click to know more "
+                android:textColor="@color/black"
                 android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/imageView"
+                android:layout_width="277dp"
+                android:layout_height="131dp"
+
+                android:layout_centerInParent="true"
+                android:background="@drawable/banner" />
+
+
         </RelativeLayout>
 
 
@@ -100,10 +107,9 @@
             android:id="@+id/mainGrid"
             android:layout_width="match_parent"
             android:layout_height="338dp"
-            android:layout_marginTop="80dp"
+            android:layout_marginBottom="60dp"
             android:layout_weight="8"
             android:alignmentMode="alignMargins"
-            android:background="@color/white"
             android:columnCount="2"
             android:columnOrderPreserved="false"
             android:padding="14dp"
