@@ -3,4 +3,28 @@
     <string name="yoga_and_fitness">Yoga and Fitness</string>
     <string name="lbl_hi" />
     <string name="lbl_jenny_wilson" />
+
+    <string-array name="title">
+
+        <item>Bhujangasana</item>
+        <item>Dhanurasana</item>
+        <item>Sirsasana</item>
+        <item>Padmasana</item>
+        <item>Natarajasana</item>
+        <item>Halasana</item>
+        <item>Vajrasana</item>
+        <item>Virabhadrasana</item>
+        <item>Chakrasana</item>
+        <item>Surya Namaskar</item>
+        <item>Ustrasana</item>
+        <item>Sarvangasana</item>
+        <item>Siddhasana</item>
+        <item>Bhairavasana</item>
+        <item>Tadasana</item>
+        <item>Vriksasana</item>
+        <item>Navasana</item>
+
+
+    </string-array>
+
 </resources>
