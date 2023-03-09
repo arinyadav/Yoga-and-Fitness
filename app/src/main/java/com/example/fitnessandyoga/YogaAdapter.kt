@@ -1,5 +1,6 @@
 package com.example.fitnessandyoga
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -55,6 +56,21 @@ class YogaAdapter(var yogaActivity: YogaActivity, var title: Array<String>) : Ba
         }
         textView.text = title[i]
         textView.animation = animation
+
+        // Adding onClickListener to each item in the ListView
+        mView.setOnClickListener {
+            when(title[i]) {
+                "Bhujangasana" -> {
+                    val intent = Intent(yogaActivity, Bhujangasana::class.java)
+                    yogaActivity.startActivity(intent)
+                }
+                "Dhanurasana" -> {
+                    val intent = Intent(yogaActivity, Dhanurasana::class.java)
+                    yogaActivity.startActivity(intent)
+                }
+                // Add more cases for other items in the list
+            }
+        }
         return mView
     }
 
