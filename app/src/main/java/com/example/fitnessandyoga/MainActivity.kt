@@ -8,9 +8,10 @@ import android.os.Bundle
 import android.view.View
 import android.widget.ImageButton
 import android.widget.Toast
+import retrofit2.*
+import retrofit2.converter.gson.GsonConverterFactory
 
 class MainActivity : AppCompatActivity() {
-
     lateinit var musicbtn:ImageButton
     lateinit var yogabtn:ImageButton
     lateinit var motivbtn:ImageButton
@@ -33,13 +34,12 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent)
         }
 
-        horobtn.setOnClickListener {
-            Toast.makeText(this,"Opening Horoscope",Toast.LENGTH_SHORT).show()
+        horobtn.setOnClickListener(View.OnClickListener {
+            startActivity(Intent(this, HoroscopeActivity::class.java))
 
-            val Intent= Intent(this,WhiteMusicActivity::class.java)
-            startActivity(Intent)
+        })
 
-        }
+
 
         motivbtn.setOnClickListener {
             Toast.makeText(this,"Opening Motivational Quotes",Toast.LENGTH_SHORT).show()
