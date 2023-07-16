@@ -31,9 +31,8 @@ class MainActivity : AppCompatActivity() {
     lateinit var motivbtn:ImageButton
     lateinit var horobtn:ImageButton
 
-    private lateinit var mainActivityslider: ImageSlider
-
-    lateinit var wishUser: TextView
+//    private lateinit var mainActivityslider: ImageSlider
+//    lateinit var wishUser: TextView
     private lateinit var drawerLayout: DrawerLayout
     private lateinit var navigationView: NavigationView
 
@@ -52,12 +51,7 @@ class MainActivity : AppCompatActivity() {
         onCardClick()
 
 
-
-
-
-
         val settingsIcon: ImageView = findViewById(R.id.setting_icon)
-
         settingsIcon.setOnClickListener {
             drawerLayout.openDrawer(GravityCompat.START)
         }
@@ -78,7 +72,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun gretings(){
-        wishUser = findViewById(R.id.wish)
+      val wishUser:TextView = findViewById(R.id.wish)
         val timeduration = Calendar.getInstance().get(Calendar.HOUR_OF_DAY)
         val showMessage = when (timeduration) {
             in 0..11 -> "Good Morning"
@@ -92,7 +86,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun mainSlider(){
 
-        mainActivityslider = findViewById(R.id.image_slider)
+      val  mainActivityslider:ImageSlider = findViewById(R.id.image_slider)
         val remoteimages: MutableList<SliderModel> = ArrayList()
 
         FirebaseDatabase.getInstance().reference.child("Slider")
