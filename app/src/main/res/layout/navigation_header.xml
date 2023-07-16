@@ -16,7 +16,7 @@ android:src="@drawable/yog"
 
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:text="Welcome to eGanna Parchi and Payment"
+        android:text="Welcome to Yoga nad Fitness"
         android:layout_marginTop="15dp"
         android:gravity="center_horizontal"
         android:textSize="25sp"
