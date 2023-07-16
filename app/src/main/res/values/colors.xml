@@ -10,4 +10,14 @@
     <color name="light_blue">#9190e0</color>
     <color name="bg_color">#040507</color>
     <color name="bg_card_color">#423F58</color>
+
+    <color name="snackbar_error_color">#F72400</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="lavender">#8692f7</color>
+
+
+    <color name="yellow">#FFC801</color>
+    <color name="homepage">#65D5F3</color>
+
 </resources>

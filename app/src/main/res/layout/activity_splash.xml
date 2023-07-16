@@ -6,7 +6,25 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".SplashActivity"
-    android:background="@drawable/logoyoga">
+    android:background="@color/transparent">
+
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="300dp"
+        android:src="@drawable/yoggga"
+        android:layout_marginTop="250dp"
+        android:layout_gravity="center"
+
+        />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="@dimen/_40sp"
+    android:textColor="@color/homepage"
+    android:textStyle="bold"
+    android:text="Yoga and Fitness"/>
 
 
 
