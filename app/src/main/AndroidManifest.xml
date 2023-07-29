@@ -39,6 +39,10 @@
             android:exported="false" />
 
         <activity
+            android:name=".MotivationalQuotesActivity"
+            android:exported="false" />
+
+        <activity
             android:name=".HoroscopeActivity"
             android:exported="false" />
         <activity

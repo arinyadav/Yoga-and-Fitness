@@ -15,7 +15,7 @@ import com.denzcoskun.imageslider.ImageSlider
 import com.denzcoskun.imageslider.constants.ScaleTypes
 import com.denzcoskun.imageslider.interfaces.ItemClickListener
 import com.denzcoskun.imageslider.models.SlideModel
-import com.example.fitnessandyoga.MainScreenCorousel.SliderModel
+import com.example.fitnessandyoga.Yogas.MainScreenCorousel.SliderModel
 import com.google.android.material.navigation.NavigationView
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var motivbtn:ImageButton
     lateinit var horobtn:ImageButton
 
-//    private lateinit var mainActivityslider: ImageSlider
+    //    private lateinit var mainActivityslider: ImageSlider
 //    lateinit var wishUser: TextView
     private lateinit var drawerLayout: DrawerLayout
     private lateinit var navigationView: NavigationView
@@ -41,10 +41,10 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         supportActionBar?.hide()
 
-//        window.setFlags(
-//            WindowManager.LayoutParams.FLAG_FULLSCREEN,
-//            WindowManager.LayoutParams.FLAG_FULLSCREEN
-//        )
+        window.setFlags(
+            WindowManager.LayoutParams.FLAG_FULLSCREEN,
+            WindowManager.LayoutParams.FLAG_FULLSCREEN
+        )
 
         gretings()
         mainSlider()
@@ -72,7 +72,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun gretings(){
-      val wishUser:TextView = findViewById(R.id.wish)
+        val wishUser:TextView = findViewById(R.id.wish)
         val timeduration = Calendar.getInstance().get(Calendar.HOUR_OF_DAY)
         val showMessage = when (timeduration) {
             in 0..11 -> "Good Morning"
@@ -86,7 +86,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun mainSlider(){
 
-      val  mainActivityslider:ImageSlider = findViewById(R.id.image_slider)
+        val  mainActivityslider:ImageSlider = findViewById(R.id.image_slider)
         val remoteimages: MutableList<SliderModel> = ArrayList()
 
         FirebaseDatabase.getInstance().reference.child("Slider")

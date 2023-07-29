@@ -1,4 +1,4 @@
-package com.example.fitnessandyoga.MainScreenCorousel
+package com.example.fitnessandyoga.Yogas.MainScreenCorousel
 
 import com.denzcoskun.imageslider.models.SlideModel
 
